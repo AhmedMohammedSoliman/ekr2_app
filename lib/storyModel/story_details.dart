@@ -83,7 +83,7 @@ class _StoryDetailsState extends State<StoryDetails> {
     );
   }
   Future <void> loadFiles (int index)async{
-   String file = await rootBundle.loadString("assets/files/${index+1}.txt");
+   String file = await rootBundle.loadString("assets/fileses/${index+1}.txt");
    List<String> lines = file.split("\n");
    contentList = lines ;
    setState((){
